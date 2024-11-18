@@ -1,0 +1,9 @@
+Installation:
+
+1. install the git for windows from git-scm.com
+
+Setup .git setup in local device
+
+1. create a folder from there ,open a git bash 
+2. It will create .git hidden file
+3. create files on that folder
