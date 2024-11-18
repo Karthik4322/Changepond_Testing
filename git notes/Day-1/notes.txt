@@ -2,8 +2,37 @@ Installation:
 
 1. install the git for windows from git-scm.com
 
-Setup .git setup in local device
+Setup .git setup in local device:
 
 1. create a folder from there ,open a git bash 
 2. It will create .git hidden file
 3. create files on that folder
+4. git init on the bash 
+5. git add "index.txt"
+6. git config --global user.name "Karthik"
+7. git config --global user.email "shanmugamkarthik848@gmail.com"
+8. git commit -m "file index is committed" (every file , branch, folder needs to comes from add-->commit--->push
+9. git remote add origin https://githublinkrepositoryname.git(repository https link)
+10.git push -u origin master (notifies the sign in github account tab on windows
+11.git pull origin master --allow-unrelated-histories  (pulling the data from github to local device)
+
+
+Creation of branches:
+
+1. git branch (to get branches available on github)
+2. git branch testing ( creation of new branch)
+3. git branch ( it shows the current active branch denoted by *(branch name)
+
+Switch branch to branch:
+
+1. git checkout testing
+2. git branch
+3. git status
+
+To add file on remote as well as local :
+
+1. touch filename.txt
+2. 
+
+
+
