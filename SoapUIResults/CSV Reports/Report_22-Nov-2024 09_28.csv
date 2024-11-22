@@ -1,0 +1,23 @@
+Test Suite,Test Case,Test Step,Step Type,Step Status,Result message,Execution Date
+Quiz App API TestSuite,/user/ TestCase,Request 1,restrequest,OK,"Message:[Contains] Missing token [Karthik Shanmugam] in Response
+Message:[name check] Missing token [sai kuttalingam
+] in Response
+Message:[name] Missing token [ARUN] in Response
+Message:[fname] Missing token [admin] in Response
+Message:[lname] Missing token [Shanmugam] in Response
+Message:[id] Missing token [Bijesh] in Response
+Message:[firstname] Missing token [BejeshSriram] in Response
+Message:[check prasath] Missing token [prasath] in Response
+",22-Nov-2024 09_28
+Quiz App API TestSuite,/user/ TestCase,Request 1,restrequest,OK,"Message:[Contains] Missing token [Karthik Shanmugam] in Response
+Message:[name check] Missing token [sai kuttalingam
+] in Response
+Message:[name] Missing token [ARUN] in Response
+Message:[id] Missing token [Bijesh] in Response
+",22-Nov-2024 09_28
+Quiz App API TestSuite,/user/ TestCase,Request 1,restrequest,OK,"Message:[Contains] Missing token [Karthik Shanmugam] in Response
+Message:[name check] Missing token [sai kuttalingam
+] in Response
+Message:[name] Missing token [ARUN] in Response
+Message:[id] Missing token [Bijesh] in Response
+",22-Nov-2024 09_28
