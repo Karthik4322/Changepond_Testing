@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Switcher</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            max-width: 800px;
+            padding: auto;
+            box-sizing: border-box;
+        }
+        img {
+            width: 300px;
+            height: auto;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Change Image Example</h1>
+    <img id="image" src="../assets/images/Indian_Cricket_Team.jfif" alt="First Image">
+    <br>
+    <button id="button1" onclick="showImage1()">Indian_Team</button>
+    <button id="button2" onclick="showImage2()">Sunflower</button>
+    <button id="button3" onclick="showImage3()">Pyramid</button>
+    <button id="button4" onclick="showImage4()">China</button>
+
+    <script>
+        function showImage1() {
+            document.getElementById("image").src = "../assets/images/Indian_Cricket_Team.jfif";
+        }
+
+        function showImage2() {
+            document.getElementById("image").src = "../assets/images/Sunflower.jfif";
+        }
+        
+        function showImage3() {
+            document.getElementById("image").src = "../assets/images/pyramid.jfif";
+        }
+        function showImage4() {
+            document.getElementById("image").src = "../assets/images/china.jfif";
+        }
+
+    </script>
+
+</body>
+</html>

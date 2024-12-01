@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+p,card-text{
+    max-width: 200px;
+    max-height: 150px;
+}
+container.card{
+ border: 3px solid ;
+ border-color: black;
+}
+
+/* div.container{
+    margin-top: 7px;
+    margin-left: 0%;
+    margin-right: 0%;
+    max-width: 340px;
+} */
+ .card-custom {
+    width: 18rem;
+    height: 28rem;
+    border: 2px solid #0d6efd;   /* Primary color */
+    border-radius: 0.25rem;  /* Optional: Matches Bootstrap's default border-radius */
+}
+
+div.card-body{
+    margin-bottom: 5px;
+    padding: 2px;
+    margin: auto;
+    border-color: black;
+}
+div.card.card-custom{
+    border-color: black;
+}
+div.col-xl-2 col-lg-3 col-md-4 col-sm-6{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+div.container.mt-3{
+    max-width: initial;
+    margin-left: initial;
+    padding: 0px;
+    max-width: initial;
+    
+}

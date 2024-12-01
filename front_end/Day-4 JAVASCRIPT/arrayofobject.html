@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Array of objects- Array contains number of objects in a array
+        let employees=[
+            {id:1, name:"Rahul",post: "Web designer",salary:50000,gender:"male",age: 24,city:"Chennai",state:"Tamilnadu"},
+            {id:1, name:"Janani",post: "Data science",salary:90000,gender:"female",age: 29,city:"Coimbatore",state:"Tamilnadu"},
+            {id:1, name:"Vinitha",post: "Fashion Designer",salary:150000,gender:"female",age: 30,city:"New Delhi",state:"Delhi"},
+            {id:1, name:"Lakshmi",post: "Manager",salary:250000,gender:"female",age: 64,city:"Pollachi",state:"Tamilnadu"},
+            {id:1, name:"Rajalakshmi",post: "Manager",salary:50000,gender:"female",age: 59,city:"Tuticorn",state:"Tamilnadu"},
+            {id:1, name:"Kishore",post: "Full stack developer",salary:180000,gender:"male",age: 45,city:"Pune",state:"Maharastra"},
+            {id:1, name:"Varma",post: "Trainer",salary:3350000,gender:"male",age: 44,city:"Kaakinaada",state:"Telangana"},
+            {id:1, name:"Sunil",post: "Database Administrator",salary:50000,gender:"male",age: 27,city:"Amaravaathi",state:"AndhraPradesh"},
+            {id:1, name:"Suresh",post: "Web designer",salary:950000,gender:"male",age: 24,city:"Chennai",state:"Tamilnadu"},
+            {id:1, name:"Ramesh",post: "Web designer",salary:1050000,gender:"male",age: 24,city:"Chennai",state:"Tamilnadu"},
+            
+        ]
+
+        // Printing the each object using for of (for each) method
+        document.write(`1.Display the employees<br>`);
+
+        for(let s of employees){
+            document.write(`<br> Id: ${s.id} Name:${s.name} Post:${s.post} Salary:${s.salary} Gender: ${s.gender} Age:${s.age} City:${s.city} State:${s.state}`);
+        }
+        document.write(`<br>`);
+        document.write(`2.Display the employees having post of Manager<br>`);
+      
+        for(let s of employees){
+            if(s.post=="Manager")
+            document.write(`<br> Id: ${s.id} Name:${s.name} Post:${s.post} Salary:${s.salary} Gender: ${s.gender} Age:${s.age} City:${s.city} State:${s.state}`);
+        }
+        document.write(`<br>`);
+        document.write(`3.Display the employees who are female<br>`);
+        for(let s of employees){
+            if(s.gender=="female")
+            document.write(`<br> Id: ${s.id} Name:${s.name} Post:${s.post} Salary:${s.salary} Gender: ${s.gender} Age:${s.age} City:${s.city} State:${s.state}`);
+        }
+        document.write(`<br>`);
+        document.write(`4.Display the employees who are age above 55<br>`);
+        for(let s of employees){
+            if(s.age>55)
+            document.write(`<br> Id: ${s.id} Name:${s.name} Post:${s.post} Salary:${s.salary} Gender: ${s.gender} Age:${s.age} City:${s.city} State:${s.state}`);
+        }
+        document.write(`<br>`);
+        document.write(`5.Display the employees who are female<br>`);
+        for(let s of employees){
+            if(s.state="TamilNadu")
+            document.write(`<br> Id: ${s.id} Name:${s.name} Post:${s.post} Salary:${s.salary} Gender: ${s.gender} Age:${s.age} City:${s.city} State:${s.state}`);
+        }
+
+    </script>
+</body>
+</html>
