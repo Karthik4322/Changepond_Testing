@@ -1,0 +1,106 @@
+======================================================POSTGRESQL FILTERING KEYWORD WITH STATEMENTS ===============================================================================================================
+
+1. Using > 
+
+ select customer_id,length(first_name),first_name from customer where length(first_name)>5;
+
+2. Using <
+
+select customer_id,length(first_name),first_name from customer where length(first_name)<5;
+
+3. Using >= 
+select release_year,film_id,title from film where release_year>=2006 limit 10;
+
+4. using <=
+
+select release_year,film_id,title from film where release_year <=2006 limit 10;
+
+5. using != or <> (you can use either symbol it does not equal)
+
+select release_year,film_id,title from film where (release_year!= 2006) limit 10;
+
+6. using = symbol;
+
+ select actor_id,first_name,last_name from actor where first_name ='Morgan';
+
+7. using AND:
+
+select first_name,last_name,actor_id from actor where(first_name='Ed' AND last_name ='Chase')
+
+
+8. Using OR:
+
+select actor_id,first_name,last_name from actor where(first_name ='Morgan' OR last_name='Hopkins')
+
+9. using in
+
+select actor_id, first_name,last_name from actor where actor_id IN (85,86,87);
+
+10, Not IN 
+
+select actor_id, first_name,last_name from actor where actor_id NOT IN (85,86,87);
+
+11. between 
+
+select actor_id,first_name,last_name from actor where actor_id between 80 AND 90;
+
+
+12 Not between
+
+select actor_id,first_name,last_name from actor where actor_id not between 80 AND 90;
+
+
+13. LIKE 
+
+i) Name starts with Ala
+
+select film_id,title from film where title like 'Ala%';
+
+ii) Name ends with ers
+
+
+select film_id,title from film where title like '%ers';
+
+iii) Name starts with capital A , third letter is small a and title end with y
+
+select film_id,title from film where title like 'A_a%y';
+
+iv) Name starts with a or A (Making case insensitive)
+
+select title from film where title ILIKE 'A%';
+
+v) Combining with Other Conditions
+
+select title,film_id,rental_rate from film where title like 'Cha%'  and rental_rate =4.99;
+
+
+14. Not LIKE:
+
+vi) Expect the Character Starts with A:
+
+SELECT film_id,title FROM employees WHERE title NOT LIKE 'A%';
+
+
+15. IS NULL:
+
+
+select film_id,title,release_year from film where release_year is null;
+
+
+16. NOT  IS NULL
+
+select film_id,title,release_year from film where release_year not is null;
+
+
+17. LIMIT:
+
+select release_year,film_id,title from film where release_year>=2006 limit 10;
+
+18. offset:
+
+select release_year,film_id,title from film where release_year>=2006 limit 10 offset 2;
+
+19. NOT:
+
+
+select rental_duration,film_id,title from film where NOT rental_duration = 7 limit 10;
