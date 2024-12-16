@@ -1,0 +1,9 @@
+<p>changeimage works!</p>
+<div>
+  <img [src]="currentImage.src" [alt]="currentImage.name" width="300" />
+  <p>{{ currentImage.name }}</p>
+  <button (click)="switchImage(0)">Image 1</button>
+  <button (click)="switchImage(1)">Image 2</button>
+  <button (click)="switchImage(2)">Image 3</button>
+  <button (click)="switchImage(3)">Image 4</button>
+</div>

@@ -1,0 +1,39 @@
+<style>
+  button {
+    margin: 5px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+  }
+
+  li:hover {
+    background-color: #f0f0f0;
+  }
+</style>
+
+<div>
+  <button (click)="showList('car')">Show Cars</button>
+  <button (click)="showList('bike')">Show Bikes</button>
+</div>
+
+<div [ngSwitch]="selectedList">
+  <ul *ngSwitchCase="'car'">
+    <li *ngFor="let car of cars" (click)="selectItem(car)">{{ car }}</li>
+  </ul>
+  <ul *ngSwitchCase="'bike'">
+    <li *ngFor="let bike of bikes" (click)="selectItem(bike)">{{ bike }}</li>
+  </ul>
+</div>
+
+<div *ngIf="selectedItem">
+  <p>You have selected: {{ selectedItem }}</p>
+</div>
